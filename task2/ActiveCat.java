@@ -3,11 +3,6 @@ package kz.attractor.java;
 import java.util.List;
 import java.util.Random;
 
-    // код можно менять только в особо отмеченных местах этого файла.
-    // то есть там, где написаны три знака вопроса "???"
-    // так же возможно вам понадобится добавить что-то в 
-    // блок import и поменять имя пакета
-    // в остальных местах этого файла код менять не разрешается.
 
 public final class ActiveCat {
     private static final Random r = new Random();

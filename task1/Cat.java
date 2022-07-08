@@ -23,8 +23,6 @@ final class Cat {
     }
 
     public static final List<Cat> makeCats(int amount) {
-        // это называется конвейерная обработка.
-        // будем проходить на одном из занятий
         return Stream.generate(Cat::new)
                 .limit(amount)
                 .collect(Collectors.toList());

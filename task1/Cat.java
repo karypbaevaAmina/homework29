@@ -1,7 +1,9 @@
 package kz.attractor.java;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -44,8 +46,16 @@ final class Cat {
         return breed;
     }
 
+    public boolean isNumber() {
+        return name.length() == 5;
+    }
+
     enum Color {
-        TABBY, SILVER, GRAY, PEACH, GINGER, TORTIE
+        TABBY, SILVER, GRAY, PEACH, GINGER, TORTIE;
+
+        public boolean isGinger(Cat cat) {
+            return cat.color == Color.GINGER;
+        }
     }
 
     enum Breed {
@@ -69,10 +79,16 @@ final class Cat {
         System.out.printf("%s: %s%n", name, age);
     }
 
-    public boolean nameCat(Cat e) {
-        return (name.length() == 5);
-    }
+
+
 }
+
+
+
+
+
+
+
 
 
 

@@ -2,6 +2,8 @@ package kz.attractor.java;
 
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 public final class ActiveCat {
@@ -23,16 +25,17 @@ public final class ActiveCat {
     }
 
     public static String jump() {
-        return "Я прыгаю";
+        return "I'm jumping";
     }
 
     public static String sleep() {
-        return "Я сплю!";
+        return "i sleep";
     }
 
     public static String eat() {
-        return "Я кушаю!";
+        return "I'm eating";
     }
+
 
 }
 

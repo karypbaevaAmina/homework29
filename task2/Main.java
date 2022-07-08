@@ -6,9 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Action f1 = ()-> "I'm jumping";
-        Action f2 = ()-> "I sleep";
-        Action f3 =()-> "I'm eating";
+        var cat = new ActiveCat(String::new);
+
+
+
         Action a1 =() -> "I lying";
         Action a2 = ()-> " I drink";
         Action a3 =()-> "I play";

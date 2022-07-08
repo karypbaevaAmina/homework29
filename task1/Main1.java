@@ -31,8 +31,6 @@ public class Main1 {
         cats.removeIf(Cat::isNumber);// УУдалять из списка всех котов, длина имени которого равна 5.
         Printer.print(cats);
 
-
-
     }
 
 }
